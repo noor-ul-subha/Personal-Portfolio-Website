@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Noor Ul Subha, Software Engineering student focused on web development and AI.">
+    <meta name="theme-color" content="#ffd9c7">
+    <title>Noor Ul Subha | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var theme = null;
+
+            try {
+                theme = localStorage.getItem('theme');
+            } catch (e) {}
+
+            if (!theme && window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                theme = 'dark';
+            }
+
+            document.documentElement.setAttribute('data-theme', theme || 'light');
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">My Portfolio Website</a>
+
+        <nav id="navLinks" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="themeBtn"
+                aria-label="Switch between light and dark mode"
+                title="Switch theme">
+                <span id="themeIcon">&#9790;</span>
+            </button>
+
+            <button class="icon-btn menu-btn" id="menuBtn"
+                aria-label="Open menu" aria-expanded="false">
+                &#9776;
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="blob blob-purple"></div>
+            <div class="blob blob-yellow"></div>
+
+            <div class="hero-text">
+                <p class="tag">Hello, I'm</p>
+
+                <h1>Noor Ul <span class="highlight">Subha</span></h1>
+
+                <h2>Software Engineering Student</h2>
+
+                <p class="intro">
+                    I’m a Software Engineering student focused on web development,
+                    building responsive and user-friendly websites. I’m also
+                    expanding my knowledge of Artificial Intelligence.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                    </a>
+
+                    <a href="resume.docx"
+                        class="btn btn-outline"
+                        download="Noor-Ul-Subha-Resume.docx">
+                        Download Resume </a>
+
+                </div>
+
+                <div class="social-row">
+                    <a href="https://github.com/noor-ul-subha"
+                       target="_blank" rel="noopener">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/noor-ul-subha"
+                       target="_blank" rel="noopener">
+                        LinkedIn
+                    </a>
+
+                    <a href="mailto:noorulsubha4@gmail.com">
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-photo">
+                <div class="avatar">
+                    <span>NS</span>
+
+                    <img src="images/Noor.jpeg"
+                         alt="Photo of Noor Ul Subha"
+                         onerror="this.remove()">
+                </div>
+
+                <p class="location">Sahiwal, Punjab, Pakistan</p>
+            </div>
+
+        </section>
+
+        <section id="about" class="section reveal">
+
+            <h2 class="section-title">
+                About Me <span class="star">&#10022;</span>
+            </h2>
+
+            <div class="about-grid">
+
+                <p>
+                    I am a BS Software Engineering student at COMSATS
+                    University Islamabad, Sahiwal Campus. I enjoy solving
+                    problems and turning ideas into working programs.
+                </p>
+
+                <p>
+                    I have built projects in Java, C++ and MySQL, and I am
+                    now moving into web development with HTML, CSS and
+                    JavaScript. I am also studying AI and Python, and my
+                    goal is to become a full stack developer.
+                </p>
+
+                <div class="soft-skills">
+                    <span>Problem Solving</span>
+                    <span>Teamwork</span>
+                    <span>Communication</span>
+                    <span>Time Management</span>
+                    <span>Critical Thinking</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section alt reveal">
+
+            <h2 class="section-title">
+                Technical Skills <span class="star">&#10022;</span>
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python <em>learning</em></li>
+                        <li>JavaScript <em>learning</em></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript <em>learning</em></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li>OOP</li>
+                        <li>Data Structures</li>
+                        <li>DBMS</li>
+                        <li>AI <em>learning</em></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>MySQL</li>
+                        <li>Jupyter Notebook</li>
+                        <li>Git &amp; GitHub</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+       <section id="projects" class="section reveal">
+
+    <h2 class="section-title">
+        Projects <span class="star">&#10022;</span>
+    </h2>
+
+    <div class="projects-grid">
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>SC</span>
+                <img src="images/Screenshot%202026-10-27%20183500.png"
+                     alt="Shopping Club E-Commerce Website">
+            </div>
+
+            <div class="project-body">
+                <h3>Shopping Club</h3>
+
+                <p>
+                    An e-commerce website interface featuring product
+                    listings, product cards and shopping functionality.
+                </p>
+
+                <p class="tech">HTML · CSS · JavaScript</p>
+
+                <a href="https://github.com/noor-ul-subha/Shopping-Club"
+                   target="_blank"
+                   rel="noopener"
+                   class="link">
+                    View on GitHub →
+                </a>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>CP</span>
+                <img src="images/Screenshot%202026-08-10%20024352.png"
+                     alt="CodingPath Project">
+            </div>
+
+            <div class="project-body">
+                <h3>CodingPath</h3>
+
+                <p>
+                    A coding guidance application designed to help users
+                    learn programming through an AI-powered chat interface.
+                </p>
+
+                <p class="tech">Java · Java Swing · API Integration</p>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>WC</span>
+                <img src="images/Screenshot%202026-08-10%20013452.png"
+                     alt="Weather Forecasting Chatbot">
+            </div>
+
+            <div class="project-body">
+                <h3>Weather Forecasting Chatbot</h3>
+
+                <p>
+                    A console-based Java application that retrieves
+                    weather information using an API.
+                </p>
+
+                <p class="tech">Java · API Integration</p>
+
+                <a href="https://github.com/noor-ul-subha/weather-chatbot"
+                   target="_blank"
+                   rel="noopener"
+                   class="link">
+                    View on GitHub →
+                </a>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>SO</span>
+                <img src="images/Style%20Organizer.png"
+                     alt="Style Organizer Project">
+            </div>
+
+            <div class="project-body">
+                <h3>Style Organizer</h3>
+
+                <p>
+                    An application for organizing and managing clothing
+                    items using object-oriented programming and file handling.
+                </p>
+
+                <p class="tech">C++ · OOP · File Handling</p>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>HM</span>
+                <img src="images/Hospital.png"
+                     alt="Hospital Management System">
+            </div>
+
+            <div class="project-body">
+                <h3>Hospital Management System</h3>
+
+                <p>
+                    A system for managing patient records and hospital
+                    operations using data structures.
+                </p>
+
+                <p class="tech">C++ · Data Structures</p>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>TM</span>
+                <img src="images/Trip%20manager.png"
+                     alt="Trip Manager SQL Database Project">
+            </div>
+
+            <div class="project-body">
+                <h3>Trip Manager</h3>
+
+                <p>
+                    A database project for managing trips, bookings,
+                    customer information and payment records.
+                </p>
+
+                <p class="tech">MySQL · SQL · DBMS</p>
+            </div>
+
+        </article>
+
+        <article class="project-card">
+
+            <div class="thumb">
+                <span>DV</span>
+                <img src="images/Digital%20Voting%20Machine.png"
+                     alt="Digital Voting Machine Circuit">
+            </div>
+
+            <div class="project-body">
+                <h3>Digital Voting Machine</h3>
+
+                <p>
+                    A digital logic project that simulates a voting
+                    machine using logic components and circuit connections.
+                </p>
+
+                <p class="tech">Digital Logic Design · Proteus</p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+       
+        <section id="education" class="section alt reveal">
+
+            <h2 class="section-title">
+                Education <span class="star">&#10022;</span>
+            </h2>
+
+            <div class="timeline-card">
+
+                <p class="years">2025 &ndash; 2029</p>
+
+                <h3>BS Software Engineering</h3>
+
+                <p>
+                    COMSATS University Islamabad, Sahiwal Campus
+                </p>
+
+                <p class="tech">
+                    Currently in 4th semester &middot; CGPA 3.63
+                </p>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+
+            <h2 class="section-title">
+                Contact Me <span class="star">&#10022;</span>
+            </h2>
+
+            <p class="contact-text">
+                I am open to learning opportunities, internships and
+                collaboration. Send me a message or reach out on any
+                of these links.
+            </p>
+
+            <div class="contact-wrap">
+
+                <form id="contactForm" class="contact-form" novalidate>
+
+                    <label for="name">Your name</label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Your name"
+                           required>
+
+                    <label for="email">Your email</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="you@example.com"
+                           required>
+
+                    <label for="message">Message</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="How can I help you?"
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                    <p id="formStatus"
+                       class="form-status"
+                       role="status"></p>
+
+                </form>
+
+                <div class="contact-links">
+
+                    <a href="mailto:noorulsubha4@gmail.com"
+                       class="contact-card">
+
+                        <strong>Email</strong>
+                        <span>noorulsubha4@gmail.com</span>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/noor-ul-subha"
+                       target="_blank"
+                       rel="noopener"
+                       class="contact-card">
+
+                        <strong>LinkedIn</strong>
+                        <span>noor-ul-subha</span>
+
+                    </a>
+
+                    <a href="https://github.com/noor-ul-subha"
+                       target="_blank"
+                       rel="noopener"
+                       class="contact-card">
+
+                        <strong>GitHub</strong>
+                        <span>noor-ul-subha</span>
+
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Noor Ul Subha.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <a href="#home" class="to-top" id="toTop" aria-label="Back to top">
+        &uarr;
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

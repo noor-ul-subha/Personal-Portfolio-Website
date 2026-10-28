@@ -1,0 +1,6 @@
+Put your files here:
+photo.jpg  (your profile photo)
+shopping-club.png  (screenshot of Shopping Club)
+codingpath.png  (screenshot of CodingPath)
+
+Also put resume.pdf next to index.html (one level up).
