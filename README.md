@@ -86,18 +86,10 @@ A digital logic project that simulates a voting machine using logic components a
 
 ## How to Run the Project
 
-1. Clone or download this repository.
-2. Open the project folder in Visual Studio Code.
-3. Make sure the HTML, CSS, JavaScript, and image files are present.
-4. Open `index.html` in your browser, or run it using the Live Server extension in VS Code.
-5. Explore the different sections of the portfolio.
-
-## Future Improvements
-
-* Improve accessibility and mobile responsiveness.
-* Add more projects as I continue learning.
-* Enhance project descriptions and demonstrations.
-* Improve the contact form functionality.
+1. Open the project folder in Visual Studio Code.
+2. Make sure the HTML, CSS, JavaScript, and image files are present.
+3. Open `index.html` in your browser, or run it using the Live Server extension in VS Code.
+4. Explore the different sections of the portfolio.
 
 ## About Me
 
